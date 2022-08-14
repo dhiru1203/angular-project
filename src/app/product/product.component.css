@@ -30,6 +30,7 @@
 }
 
 .card-desc {
+  text-align: center;
   background-color: #fff;
   display: block;
   font-size: 1.2rem;
