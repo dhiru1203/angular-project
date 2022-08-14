@@ -21,6 +21,7 @@
 }
 
 .card img {
+  cursor: pointer;
   width: 100%;
   height: fit-content;
   object-fit: cover;
