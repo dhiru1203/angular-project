@@ -5,9 +5,7 @@ import { DetailsComponent } from './details/details.component';
 
 const routes: Routes = [
   {path:'productList',component:ProductComponent},
-  //{path:'productDetails',component:DetailsComponent},
   {path:'productDetails/:id',component:DetailsComponent}
-
 ];
 
 @NgModule({
@@ -15,4 +13,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-//export const routingComponent = [ProductComponent, DetailsComponent];
