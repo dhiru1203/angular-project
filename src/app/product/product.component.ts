@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UserserviceService } from '../userservice.service';
-import{ Product } from '../productInterface';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -9,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {  
-  data: Array<Product> = [];
+  data : any ;
 
   constructor(private product: UserserviceService, private router: Router) { }
 
