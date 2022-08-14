@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-details',
@@ -6,10 +8,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
+  product: any;
+  id: number;
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private http: HttpClient
+  ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.activatedRoute.params.subscribe((data) => {
+      this.getDetails((data as any).id);
+    });
   }
 
+  getDetails(id: number) {
+    this.http
+      .get(`https://dummyjson.com/products/${id}`)
+      .subscribe((data) => {
+        this.product = data;
+        console.log(data);
+      });
+  }
 }

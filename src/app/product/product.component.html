@@ -1,5 +1,5 @@
 <div class="cards">
-  <div class="card" *ngFor="let item of data">
+  <div class="card" *ngFor="let item of data" (click)="Details(item)">
     <h2 class="card-title">{{ item.title }}</h2>
     <h4 class="card-title">{{ item.category }}</h4>
     <img
