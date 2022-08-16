@@ -1,10 +1,11 @@
 <img [src]="product.images[0]" alt="" />
 <h1>{{ product.title }}</h1>
-<p style="font-weight: bold">Price: ${{ product.price }}</p>
-<p><b>Brand:</b> {{ product.brand }}</p>
-<p><b></b> {{ product.category }}</p>
-<p><b>Description :</b> {{ product.description }} </p>
-<p><b>Stock:</b> {{ product.stock }}</p>
-<p><b>Discount Percentage:</b> {{ product.discountPercentage }}</p>
-<p><b>Rating:</b> {{ product.rating }}</p>
-<img [src]="product.images[0][0]" alt="" />
+<div class="container">
+<div class="items"><b>Price:</b> ${{ product.price }}</div>
+<div class="items"><b>Brand:</b> {{ product.brand }}</div>
+<div class="items"><b>Category:</b> {{ product.category }}</div>
+<div class="items"><b>Description :</b> {{ product.description }} </div>
+<div class="items"><b>Stock:</b> {{ product.stock }}</div>
+<div class="items"><b>Discount Percentage:</b> {{ product.discountPercentage }}</div>
+<div class="items"><b>Rating:</b> {{ product.rating }}</div>
+</div>
