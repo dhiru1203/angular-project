@@ -1,7 +1,7 @@
 <div class="cards">
   <div class="card" *ngFor="let item of data" >
     <h3 class="card-title">{{ item.title }}</h3>
-    <h5 class="card-title">{{ item.category }}</h5>
+    <h5 class="card-category">{{ item.category }}</h5>
     <img
       src="{{ item.images[0] }}"
       alt="{{ item.id }}"

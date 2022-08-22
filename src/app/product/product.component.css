@@ -5,6 +5,7 @@
 }
 
 .card {
+  border:solid 1px;
   background-color: yellowgreen;
   text-align: center;
   max-height: fit-content;
@@ -17,6 +18,7 @@
 
 .card-title {
   height: 20px;
+  background-color:wheat;
 }
 .card img {
   margin: auto;
@@ -37,7 +39,10 @@
   padding: 10px;
 }
 .detailbtn {
+  border:solid 1px;
+  border-radius: 15%;
+  background-color:wheat;
   margin-bottom: 10px;
   cursor: pointer;
-  padding: 5px;
+  padding: 10px;
 }
