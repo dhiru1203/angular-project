@@ -1,50 +1,40 @@
 .cards {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 .card {
+  text-align: center;
+  max-height: fit-content;
   position: relative;
   width: 250px;
-  margin: 40px;
-  box-shadow: 0px 40px 60px -6px black;
+  margin: 30px;
+  box-shadow: 0px 20px 60px -6px black;
 }
 
-.card-title {
-  display: block;
-  text-align: center;
-  color: black;
-  background-color: white;
-  padding: 2%;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+.card-title{
+  height: 20px;
 }
-
 .card img {
-  cursor: pointer;
-  width: 100%;
-  height: fit-content;
+  margin: auto;
+  max-width: 250px;
+  height: 150px;
   object-fit: cover;
   display: block;
   position: relative;
 }
 
 .card-desc {
+  height: 90px;
   text-align: center;
   background-color: #fff;
-  display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   position: relative;
   opacity: 1;
-  padding: 20px;
+  padding: 10px;
 }
-.likebtn {
-  position: absolute;
-  left: 5%;
-  bottom: 2%;
-}
-.sharebtn {
-  position: absolute;
-  left: 75%;
-  bottom: 2%;
+.detailbtn {
+cursor: pointer;
+padding: 5px;
 }
