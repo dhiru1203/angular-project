@@ -26,9 +26,9 @@
 }
 
 .card-desc {
+  background-color: blanchedalmond;
   height: 80px;
   text-align: center;
-  background-color: #fff;
   font-size: 1rem;
   position: relative;
   opacity: 1;
