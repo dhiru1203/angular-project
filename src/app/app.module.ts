@@ -9,7 +9,7 @@ import { ProductComponent } from './product/product.component';
 import { HeaderComponent } from './header/header.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './details/form/form.component';
 
 import { MatCardModule } from '@angular/material/card';
@@ -24,9 +24,10 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
+
 @NgModule({
   declarations: [AppComponent, ProductComponent, HeaderComponent,FormComponent, DetailsComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule,ReactiveFormsModule, MatCardModule,MatButtonModule,MatDividerModule,MatProgressBarModule,MatGridListModule, BrowserAnimationsModule,MatToolbarModule, MatIconModule,MatTooltipModule,MatFormFieldModule, MatInputModule ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule,FormsModule,ReactiveFormsModule, MatCardModule,MatButtonModule,MatDividerModule,MatProgressBarModule,MatGridListModule, BrowserAnimationsModule,MatToolbarModule, MatIconModule,MatTooltipModule,MatFormFieldModule, MatInputModule ],
   providers: [],
   bootstrap: [AppComponent],
 })
