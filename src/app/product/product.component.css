@@ -5,6 +5,7 @@
 }
 
 .card {
+  background-color: yellowgreen;
   text-align: center;
   max-height: fit-content;
   position: relative;
